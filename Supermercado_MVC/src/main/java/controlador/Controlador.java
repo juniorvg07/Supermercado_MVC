@@ -59,8 +59,6 @@ public class Controlador implements ActionListener{
     }
     
     void listar(JTable tabla){
-        //modelo = (DefaultTableModel) v.tblClientes.getModel();
-        //modelo.setRowCount(0);
         ArrayList<clientes> list = dao.consulta();
                       
         for(int i = 0; i < list.size(); i++){
@@ -116,12 +114,6 @@ public class Controlador implements ActionListener{
                 
                 JOptionPane.showMessageDialog(null, "Cliente eliminado del registro", "",JOptionPane.PLAIN_MESSAGE); 
             }
-        }
-    }
-    
-    void limpiarTabla(){
-        for(int i = 0; i < v.tblClientes.getRowCount(); i++){
-            modelo.removeRow(0);
         }
     }
     

@@ -24,7 +24,7 @@ public class Conexion {
     //Constructor
     public Conexion(){
         
-        url = "jdbc:sqlite:databaseSupermercado.db";
+        url = "jdbc:sqlite:databaseSupermercado.db";//ruta del archivo de bse de datos
         
         try {
             con = DriverManager.getConnection(url); //Obtener el estado de la conexión
